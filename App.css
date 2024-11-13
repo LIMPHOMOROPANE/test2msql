@@ -1,0 +1,215 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #8c8a8a;
+  background-image: url('Op.jpg'); /* Set your image path */
+  background-size: cover; /* Cover the entire body */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; 
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: rgb(202, 199, 199);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav {
+  margin: 30px 10px;
+  background: #c4bfbf;
+  color: #181313;
+  width: 850px;
+  height: 60px;
+  display: flex;
+    gap: 25px;
+    margin-top: 20px;
+    font-size: 20px; /* Change this value to adjust text size */
+    font-weight: bold; /* Make it bold if desired */
+    color: #ffffff; /* You can change the link color if needed */
+    text-decoration: none; 
+}
+
+
+nav button {
+  margin: 0 5px;
+}
+
+section {
+  background: #c4bfbf;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #181111;
+}
+
+h2 {
+  color: #35424a;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form input, form select {
+  margin: 5px 0;
+  padding: 10px;
+  width: 90%;
+  
+  box-sizing: border-box;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #35424a;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #cbc2c2;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #35424a;
+  color: #ffffff;
+}
+
+button {
+  padding: 5px;
+  background-color: #35424a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.error {
+  border: 50px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin: 2px 0;
+}
+.home {
+  padding: 20px;
+  text-align: center;
+}
+
+.home h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.home img {
+  max-width: 50%;
+  max-height: 20%;
+  
+  margin-top: 0;
+}
+
+.home nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;}
+
+
+  nav ul {
+    list-style: none;
+    top:100PX;
+    height: 180px;
+  }
+  nav ul li {
+    
+    margin: 20px 5px;
+    
+  }
+  select{
+    height: 40px;
+  }
+  
+  .message {
+    color: green; /* Change color based on success or error */
+    margin-top: 20px;
+}
+.error-message {
+    color: red;
+    margin-top: 5px;
+    display: block; /* Added to stack error messages */
+}
+  /* styles.css or your corresponding CSS file */
+
+@keyframes zoomIn {
+  0% {
+      transform: scale(1);
+      opacity: 0;
+  }
+  50% {
+      transform: scale(1.1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+
+.zoom {
+  animation: zoomIn 10s forwards;
+}
+
+.fade {
+  animation: zoomOut 10s forwards;
+}
